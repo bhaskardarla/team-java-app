@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew &amp; Bloom — Coffee made with care</title>
+  <meta name="description" content="A warm, handcrafted coffee experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement"><span>☀</span> Slow mornings, better coffee <span class="dot">•</span> Open daily 7am–8pm</div>
+  <header>
+    <a class="brand" href="#home"><span class="brand-mark">b</span><span>Brew <i>&amp;</i> Bloom</span></a>
+    <nav aria-label="Main navigation"><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#visit">Visit us</a></nav>
+    <button class="order-button" data-scroll="#menu">Order ahead <span>↗</span></button>
+  </header>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Your daily ritual, elevated</p>
+        <h1>Good days<br>start with <em>good coffee.</em></h1>
+        <p class="intro">Small-batch roasted beans, thoughtfully brewed and served with a little warmth.</p>
+        <div class="hero-actions"><button class="primary" data-scroll="#menu">Explore our menu <span>→</span></button><a class="text-link" href="#visit">Find our café <span>↓</span></a></div>
+        <div class="rating"><div class="avatars"><span>J</span><span>M</span><span>A</span></div><div><strong>4.9 / 5</strong><small>Loved by 2,000+ coffee people</small></div><span class="stars">★★★★★</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a coffee cup">
+        <div class="sun"></div><div class="arch"></div><div class="plant"><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="cup"><div class="coffee"></div><div class="latte-art">♥</div><div class="handle"></div></div>
+        <div class="coffee-bean one"></div><div class="coffee-bean two"></div>
+        <div class="stamp">EST.<br><b>2018</b><br>WITH LOVE</div>
+      </div>
+    </section>
+    <section class="features"><div><span>✦</span><p><b>Ethically sourced</b> Beans with a better story</p></div><div><span>◌</span><p><b>Roasted weekly</b> Always fresh, always fragrant</p></div><div><span>♧</span><p><b>Made for you</b> Your cup, your way</p></div></section>
+    <section class="menu-section" id="menu"><div class="section-heading"><div><p class="eyebrow">A little something for everyone</p><h2>Made with <em>intention.</em></h2></div><a href="#visit" class="text-link">View full menu <span>→</span></a></div><div class="menu-grid">
+      <article class="drink-card dark"><div class="drink-visual iced"><div class="glass"><i></i><i></i><i></i></div></div><p class="tag">OUR SIGNATURE</p><h3>Brown Sugar Oat Latte</h3><p class="description">Espresso, house brown sugar syrup &amp; silky oat milk.</p><div class="card-bottom"><strong>₹280</strong><button class="add" data-item="Brown Sugar Oat Latte" data-price="280">Add <span>+</span></button></div></article>
+      <article class="drink-card cream"><div class="drink-visual matcha"><div class="matcha-cup"></div></div><p class="tag">BRIGHT &amp; EARTHY</p><h3>Cloud Matcha</h3><p class="description">Ceremonial matcha, vanilla cream &amp; a soft cloud top.</p><div class="card-bottom"><strong>₹300</strong><button class="add" data-item="Cloud Matcha" data-price="300">Add <span>+</span></button></div></article>
+      <article class="drink-card peach"><div class="drink-visual pastry"><div class="croissant">☾</div></div><p class="tag">BAKED THIS MORNING</p><h3>Butter Croissant</h3><p class="description">Flaky, golden, and lovely next to a long black.</p><div class="card-bottom"><strong>₹180</strong><button class="add" data-item="Butter Croissant" data-price="180">Add <span>+</span></button></div></article>
+    </div></section>
+    <section class="story" id="story"><div class="story-image"><div class="story-sun"></div><p>“The best coffee<br>is shared.”</p></div><div class="story-copy"><p class="eyebrow">Our little corner of the world</p><h2>Come in.<br>Stay <em>awhile.</em></h2><p>We believe a coffee shop should feel like a pause button. A place for bright ideas, deep chats, and deliciously unhurried mornings.</p><a class="text-link" href="#visit">Meet the people behind the counter <span>→</span></a></div></section>
+    <section class="visit" id="visit"><p class="eyebrow">Come say hello</p><h2>Your table is<br><em>waiting.</em></h2><div class="visit-details"><p><b>21, Garden Lane</b><br>Indiranagar, Bengaluru</p><p><b>Every day</b><br>7:00am — 8:00pm</p><button class="primary" id="directions">Get directions <span>↗</span></button></div></section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">b</span><span>Brew <i>&amp;</i> Bloom</span></a><p>Made slowly. Enjoyed fully.</p><p>© 2026 Brew &amp; Bloom</p></footer>
+  <aside class="cart" id="cart" aria-live="polite"><span class="cart-icon">☕</span><span id="cart-label">Your order is empty</span><strong id="cart-total"></strong></aside>
+  <script src="app.js"></script>
+</body>
+</html>
