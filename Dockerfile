@@ -2,7 +2,7 @@ FROM eclipse-temurin:17-jre
 
 WORKDIR /app
 
-COPY target/brew-and-bloom-1.0.0.ja app.jar
+COPY target/brew-and-bloom-1.0.0.jar app.jar
 
 EXPOSE 8080
 
